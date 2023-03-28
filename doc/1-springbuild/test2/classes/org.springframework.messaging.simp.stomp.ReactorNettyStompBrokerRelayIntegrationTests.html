@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ReactorNettyStompBrokerRelayIntegrationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ReactorNettyStompBrokerRelayIntegrationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.simp.stomp.html">org.springframework.messaging.simp.stomp</a> &gt; ReactorNettyStompBrokerRelayIntegrationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">19.470s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">brokerAvailabilityEventWhenStopped()</td>
+<td class="success">2.417s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">brokerBecomingUnavailableTriggersErrorFrame()</td>
+<td class="success">2.370s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">disconnectWithReceipt()</td>
+<td class="success">2.368s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">messageDeliveryExceptionIfSystemSessionForwardFails()</td>
+<td class="success">2.463s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">publishSubscribe()</td>
+<td class="success">2.428s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">relayReconnectsIfBrokerComesBackUp()</td>
+<td class="success">7.424s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:23:28.604 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Setting up before 'messageDeliveryExceptionIfSystemSessionForwardFails'
+14:23:28.604 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@28bf7bea added org.springframework.messaging.simp.stomp.AbstractStompBrokerRelayIntegrationTests$TestMessageHandler@44881fcc
+14:23:28.750 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting...
+14:23:28.750 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting &quot;system&quot; session, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@697f4085]]
+14:23:28.750 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Forwarding CONNECT session=_system_
+14:23:28.779 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Started.
+14:23:28.787 [tcp-client-loop-nio-2] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:42221
+14:23:28.856 [tcp-client-scheduler-42] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0xfcf6f556, L:/127.0.0.1:55818 - R:/127.0.0.1:42221]}}] opened in session=_system_
+14:23:28.910 [tcp-client-scheduler-42] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], login=[guest], passcode=[PROTECTED], heart-beat=[0,0]}
+14:23:28.919 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:13], version=[1.2]} session=null
+14:23:28.923 [tcp-client-scheduler-43] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=_system_
+14:23:28.923 [tcp-client-scheduler-43] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - &quot;System&quot; session connected.
+14:23:28.923 [tcp-client-scheduler-43] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@697f4085]]]
+14:23:28.923 [tcp-client-scheduler-43] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@697f4085]]]
+14:23:28.924 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Starting test messageDeliveryExceptionIfSystemSessionForwardFails()
+14:23:28.924 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Stopping ActiveMQ broker and will await shutdown
+14:23:28.954 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Broker stopped
+14:23:28.982 [tcp-client-scheduler-43] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session _system_
+14:23:28.982 [tcp-client-scheduler-43] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:28.982 [tcp-client-scheduler-43] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@697f4085]]]
+14:23:28.982 [tcp-client-scheduler-43] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@697f4085]]]
+14:23:28.982 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - STOMP broker relay stats: 1 sessions, ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@697f4085] (not available), processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)
+14:23:28.983 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopping...
+14:23:30.252 [tcp-client-loop-nio-3] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:30.254 [tcp-client-loop-nio-3] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:31.066 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopped.
+14:23:31.066 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Stopping ActiveMQ broker and will await shutdown
+14:23:31.066 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Broker not running
+14:23:31.070 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Setting up before 'publishSubscribe'
+14:23:31.071 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@6bb2b8d4 added org.springframework.messaging.simp.stomp.AbstractStompBrokerRelayIntegrationTests$TestMessageHandler@64230d44
+14:23:31.146 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting...
+14:23:31.146 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting &quot;system&quot; session, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@1285ec6]]
+14:23:31.146 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Forwarding CONNECT session=_system_
+14:23:31.155 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Started.
+14:23:31.160 [tcp-client-loop-nio-2] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:44761
+14:23:31.173 [tcp-client-scheduler-46] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0x24f45956, L:/127.0.0.1:52992 - R:/127.0.0.1:44761]}}] opened in session=_system_
+14:23:31.180 [tcp-client-scheduler-46] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], login=[guest], passcode=[PROTECTED], heart-beat=[0,0]}
+14:23:31.222 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:14], version=[1.2]} session=null
+14:23:31.224 [tcp-client-scheduler-47] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=_system_
+14:23:31.224 [tcp-client-scheduler-47] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - &quot;System&quot; session connected.
+14:23:31.224 [tcp-client-scheduler-47] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@1285ec6]]]
+14:23:31.224 [tcp-client-scheduler-47] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@1285ec6]]]
+14:23:31.225 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Starting test publishSubscribe()
+14:23:31.225 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - CONNECT session=sess1
+14:23:31.227 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - CONNECT session=sess2
+14:23:31.263 [tcp-client-loop-nio-3] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:44761
+14:23:31.274 [tcp-client-loop-nio-4] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:44761
+14:23:31.283 [tcp-client-scheduler-45] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0xa7304f28, L:/127.0.0.1:53020 - R:/127.0.0.1:44761]}}] opened in session=sess2
+14:23:31.284 [tcp-client-scheduler-45] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], heart-beat=[0,0], login=[guest], passcode=[PROTECTED]}
+14:23:31.298 [tcp-client-loop-nio-3] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:31.299 [tcp-client-loop-nio-3] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:31.304 [tcp-client-loop-nio-4] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:16], version=[1.2]} session=null
+14:23:31.305 [tcp-client-scheduler-46] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=sess2
+14:23:31.312 [tcp-client-scheduler-48] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0x7b3ab13b, L:/127.0.0.1:53008 - R:/127.0.0.1:44761]}}] opened in session=sess1
+14:23:31.315 [tcp-client-scheduler-48] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], heart-beat=[0,0], login=[guest], passcode=[PROTECTED]}
+14:23:31.317 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:15], version=[1.2]} session=null
+14:23:31.318 [tcp-client-scheduler-47] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=sess1
+14:23:31.318 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Forwarding SUBSCRIBE /topic/test id=subs1 session=sess1
+14:23:31.318 [Test worker] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP SUBSCRIBE, headers={id=[subs1], destination=[/topic/test], receipt=[r1]}
+14:23:31.323 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded RECEIPT {receipt-id=[r1]} session=null
+14:23:31.324 [tcp-client-scheduler-47] TRACE o.s.m.s.s.StompBrokerRelayMessageHandler - Received RECEIPT {receipt-id=[r1]} session=sess1
+14:23:31.325 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Forwarding SEND /topic/test session=_system_
+14:23:31.325 [Test worker] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP SEND, headers={destination=[/topic/test]}
+14:23:31.366 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded MESSAGE {content-length=[3], expires=[0], destination=[/topic/test], subscription=[subs1], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:14:-1:1:1], timestamp=[1679984611326]} session=null
+14:23:31.367 [tcp-client-scheduler-47] TRACE o.s.m.s.s.StompBrokerRelayMessageHandler - Received MESSAGE {content-length=[3], expires=[0], destination=[/topic/test], subscription=[subs1], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:14:-1:1:1], timestamp=[1679984611326]} session=sess1
+14:23:31.368 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - STOMP broker relay stats: 3 sessions, ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@1285ec6] (available), processed CONNECT(3)-CONNECTED(3)-DISCONNECT(0)
+14:23:31.368 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopping...
+14:23:31.368 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@1285ec6]]]
+14:23:31.368 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@1285ec6]]]
+14:23:31.385 [tcp-client-scheduler-46] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session sess2
+14:23:31.386 [tcp-client-scheduler-46] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session sess2
+14:23:31.389 [tcp-client-scheduler-47] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session _system_
+14:23:31.390 [tcp-client-scheduler-47] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:31.390 [tcp-client-scheduler-47] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session sess1
+14:23:31.390 [tcp-client-scheduler-47] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session sess1
+14:23:33.195 [tcp-client-loop-nio-4] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:33.195 [tcp-client-loop-nio-4] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:33.494 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopped.
+14:23:33.495 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Stopping ActiveMQ broker and will await shutdown
+14:23:33.497 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Broker stopped
+14:23:33.504 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Setting up before 'brokerAvailabilityEventWhenStopped'
+14:23:33.504 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@7f994055 added org.springframework.messaging.simp.stomp.AbstractStompBrokerRelayIntegrationTests$TestMessageHandler@31a1b37b
+14:23:33.594 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting...
+14:23:33.594 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting &quot;system&quot; session, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@12a719ed]]
+14:23:33.594 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Forwarding CONNECT session=_system_
+14:23:33.597 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Started.
+14:23:33.616 [tcp-client-loop-nio-2] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:43161
+14:23:33.626 [tcp-client-scheduler-50] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0x5e3ee060, L:/127.0.0.1:56220 - R:/127.0.0.1:43161]}}] opened in session=_system_
+14:23:33.627 [tcp-client-scheduler-50] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], login=[guest], passcode=[PROTECTED], heart-beat=[0,0]}
+14:23:33.740 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:17], version=[1.2]} session=null
+14:23:33.741 [tcp-client-scheduler-51] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=_system_
+14:23:33.742 [tcp-client-scheduler-51] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - &quot;System&quot; session connected.
+14:23:33.742 [tcp-client-scheduler-51] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@12a719ed]]]
+14:23:33.743 [tcp-client-scheduler-51] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@12a719ed]]]
+14:23:33.744 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Starting test brokerAvailabilityEventWhenStopped()
+14:23:33.744 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Stopping ActiveMQ broker and will await shutdown
+14:23:33.783 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Broker stopped
+14:23:33.787 [tcp-client-scheduler-51] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session _system_
+14:23:33.787 [tcp-client-scheduler-51] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:33.787 [tcp-client-scheduler-51] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@12a719ed]]]
+14:23:33.787 [tcp-client-scheduler-51] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@12a719ed]]]
+14:23:33.788 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - STOMP broker relay stats: 1 sessions, ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@12a719ed] (not available), processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)
+14:23:33.788 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopping...
+14:23:35.259 [tcp-client-loop-nio-4] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:35.260 [tcp-client-loop-nio-4] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:35.920 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopped.
+14:23:35.921 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Stopping ActiveMQ broker and will await shutdown
+14:23:35.921 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Broker not running
+14:23:35.922 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Setting up before 'relayReconnectsIfBrokerComesBackUp'
+14:23:35.923 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@1b6824c1 added org.springframework.messaging.simp.stomp.AbstractStompBrokerRelayIntegrationTests$TestMessageHandler@3118ed2c
+14:23:36.010 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting...
+14:23:36.011 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting &quot;system&quot; session, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@3bea7134]]
+14:23:36.011 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Forwarding CONNECT session=_system_
+14:23:36.031 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Started.
+14:23:36.033 [tcp-client-loop-nio-2] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:46367
+14:23:36.050 [tcp-client-scheduler-54] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0x4fddc342, L:/127.0.0.1:54952 - R:/127.0.0.1:46367]}}] opened in session=_system_
+14:23:36.054 [tcp-client-scheduler-54] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], login=[guest], passcode=[PROTECTED], heart-beat=[0,0]}
+14:23:36.123 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:18], version=[1.2]} session=null
+14:23:36.123 [tcp-client-scheduler-55] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=_system_
+14:23:36.123 [tcp-client-scheduler-55] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - &quot;System&quot; session connected.
+14:23:36.123 [tcp-client-scheduler-55] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@3bea7134]]]
+14:23:36.123 [tcp-client-scheduler-55] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@3bea7134]]]
+14:23:36.124 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Starting test relayReconnectsIfBrokerComesBackUp()
+14:23:36.124 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - CONNECT session=sess1
+14:23:36.132 [tcp-client-loop-nio-3] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:46367
+14:23:36.162 [tcp-client-scheduler-56] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0xd8fe7b57, L:/127.0.0.1:54960 - R:/127.0.0.1:46367]}}] opened in session=sess1
+14:23:36.164 [tcp-client-scheduler-56] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], heart-beat=[0,0], login=[guest], passcode=[PROTECTED]}
+14:23:36.172 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:19], version=[1.2]} session=null
+14:23:36.173 [tcp-client-scheduler-53] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=sess1
+14:23:36.174 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Forwarding SUBSCRIBE /topic/test id=subs1 session=sess1
+14:23:36.174 [Test worker] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP SUBSCRIBE, headers={id=[subs1], destination=[/topic/test], receipt=[r1]}
+14:23:36.193 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded RECEIPT {receipt-id=[r1]} session=null
+14:23:36.194 [tcp-client-scheduler-53] TRACE o.s.m.s.s.StompBrokerRelayMessageHandler - Received RECEIPT {receipt-id=[r1]} session=sess1
+14:23:36.195 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Stopping ActiveMQ broker and will await shutdown
+14:23:36.204 [tcp-client-scheduler-55] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session _system_
+14:23:36.205 [tcp-client-scheduler-55] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:36.205 [tcp-client-scheduler-55] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@3bea7134]]]
+14:23:36.205 [tcp-client-scheduler-55] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@3bea7134]]]
+14:23:36.240 [tcp-client-scheduler-53] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session sess1
+14:23:36.240 [tcp-client-scheduler-53] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session sess1
+14:23:36.251 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Broker stopped
+14:23:36.307 [tcp-client-loop-nio-4] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:36.307 [tcp-client-loop-nio-4] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:38.212 [tcp-client-loop-nio-1] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:38.213 [tcp-client-loop-nio-1] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:40.263 [tcp-client-loop-nio-1] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:40.267 [tcp-client-loop-nio-1] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:41.014 [tcp-client-loop-nio-4] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:46367
+14:23:41.015 [tcp-client-scheduler-55] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0x7ed25170, L:/127.0.0.1:54970 - R:/127.0.0.1:46367]}}] opened in session=_system_
+14:23:41.016 [tcp-client-scheduler-55] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], login=[guest], passcode=[PROTECTED], heart-beat=[0,0]}
+14:23:41.077 [tcp-client-loop-nio-4] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:20], version=[1.2]} session=null
+14:23:41.078 [tcp-client-scheduler-56] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=_system_
+14:23:41.078 [tcp-client-scheduler-56] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - &quot;System&quot; session connected.
+14:23:41.078 [tcp-client-scheduler-56] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@3bea7134]]]
+14:23:41.078 [tcp-client-scheduler-56] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@3bea7134]]]
+14:23:41.078 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - STOMP broker relay stats: 1 sessions, ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@3bea7134] (available), processed CONNECT(2)-CONNECTED(3)-DISCONNECT(0)
+14:23:41.078 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopping...
+14:23:41.078 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@3bea7134]]]
+14:23:41.078 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@3bea7134]]]
+14:23:41.084 [tcp-client-scheduler-56] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session _system_
+14:23:41.084 [tcp-client-scheduler-56] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:41.287 [tcp-client-loop-nio-1] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: executor not accepting a task
+java.lang.IllegalStateException: executor not accepting a task
+	at io.netty.resolver.AddressResolverGroup.getResolver(AddressResolverGroup.java:61) ~[netty-resolver-4.1.90.Final.jar:4.1.90.Final]
+	at reactor.netty.transport.TransportConnector.doResolveAndConnect(TransportConnector.java:320) ~[reactor-netty-core-1.1.5.jar:1.1.5]
+	at reactor.netty.transport.TransportConnector.lambda$connect$6(TransportConnector.java:165) ~[reactor-netty-core-1.1.5.jar:1.1.5]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132) ~[reactor-core-3.5.4.jar:3.5.4]
+	at reactor.netty.transport.TransportConnector$MonoChannelPromise._subscribe(TransportConnector.java:649) ~[reactor-netty-core-1.1.5.jar:1.1.5]
+	at reactor.netty.transport.TransportConnector$MonoChannelPromise.lambda$subscribe$0(TransportConnector.java:569) ~[reactor-netty-core-1.1.5.jar:1.1.5]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:41.287 [tcp-client-loop-nio-1] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:41.318 [tcp-client-loop-nio-1] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:41.318 [tcp-client-loop-nio-1] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:43.225 [tcp-client-loop-nio-2] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:43.225 [tcp-client-loop-nio-2] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:43.343 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopped.
+14:23:43.344 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Stopping ActiveMQ broker and will await shutdown
+14:23:43.346 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Broker stopped
+14:23:43.347 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Setting up before 'brokerBecomingUnavailableTriggersErrorFrame'
+14:23:43.348 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@1548dc37 added org.springframework.messaging.simp.stomp.AbstractStompBrokerRelayIntegrationTests$TestMessageHandler@23317e8a
+14:23:43.442 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting...
+14:23:43.443 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting &quot;system&quot; session, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@35266985]]
+14:23:43.443 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Forwarding CONNECT session=_system_
+14:23:43.455 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Started.
+14:23:43.463 [tcp-client-loop-nio-2] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:45251
+14:23:43.514 [tcp-client-scheduler-58] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0x4211aef3, L:/127.0.0.1:60134 - R:/127.0.0.1:45251]}}] opened in session=_system_
+14:23:43.522 [tcp-client-scheduler-58] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], login=[guest], passcode=[PROTECTED], heart-beat=[0,0]}
+14:23:43.536 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:21], version=[1.2]} session=null
+14:23:43.537 [tcp-client-scheduler-59] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=_system_
+14:23:43.538 [tcp-client-scheduler-59] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - &quot;System&quot; session connected.
+14:23:43.538 [tcp-client-scheduler-59] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@35266985]]]
+14:23:43.539 [tcp-client-scheduler-59] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@35266985]]]
+14:23:43.539 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Starting test brokerBecomingUnavailableTriggersErrorFrame()
+14:23:43.540 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - CONNECT session=sess1
+14:23:43.546 [tcp-client-loop-nio-3] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:45251
+14:23:43.587 [tcp-client-scheduler-60] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0xa79706cc, L:/127.0.0.1:60146 - R:/127.0.0.1:45251]}}] opened in session=sess1
+14:23:43.593 [tcp-client-scheduler-60] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], heart-beat=[0,0], login=[guest], passcode=[PROTECTED]}
+14:23:43.606 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:22], version=[1.2]} session=null
+14:23:43.607 [tcp-client-scheduler-57] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=sess1
+14:23:43.608 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Stopping ActiveMQ broker and will await shutdown
+14:23:43.626 [tcp-client-scheduler-59] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session _system_
+14:23:43.626 [tcp-client-scheduler-59] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:43.626 [tcp-client-scheduler-59] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@35266985]]]
+14:23:43.627 [tcp-client-scheduler-59] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@35266985]]]
+14:23:43.638 [tcp-client-scheduler-57] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session sess1
+14:23:43.638 [tcp-client-scheduler-57] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session sess1
+14:23:43.641 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Broker stopped
+14:23:43.642 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - STOMP broker relay stats: 1 sessions, ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@35266985] (not available), processed CONNECT(2)-CONNECTED(2)-DISCONNECT(0)
+14:23:43.642 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopping...
+14:23:45.271 [tcp-client-loop-nio-2] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:45.271 [tcp-client-loop-nio-2] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:45.717 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopped.
+14:23:45.717 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Stopping ActiveMQ broker and will await shutdown
+14:23:45.717 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Broker not running
+14:23:45.718 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Setting up before 'disconnectWithReceipt'
+14:23:45.719 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@5aa0d535 added org.springframework.messaging.simp.stomp.AbstractStompBrokerRelayIntegrationTests$TestMessageHandler@7cb32ca5
+14:23:45.806 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting...
+14:23:45.806 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Starting &quot;system&quot; session, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@5ac3c6cd]]
+14:23:45.806 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Forwarding CONNECT session=_system_
+14:23:45.818 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Started.
+14:23:45.826 [tcp-client-loop-nio-2] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:44235
+14:23:45.847 [tcp-client-scheduler-62] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0xac2d831a, L:/127.0.0.1:48184 - R:/127.0.0.1:44235]}}] opened in session=_system_
+14:23:45.849 [tcp-client-scheduler-62] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], login=[guest], passcode=[PROTECTED], heart-beat=[0,0]}
+14:23:45.924 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:23], version=[1.2]} session=null
+14:23:45.924 [tcp-client-scheduler-63] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=_system_
+14:23:45.924 [tcp-client-scheduler-63] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - &quot;System&quot; session connected.
+14:23:45.924 [tcp-client-scheduler-63] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@5ac3c6cd]]]
+14:23:45.924 [tcp-client-scheduler-63] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=true, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@5ac3c6cd]]]
+14:23:45.924 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Starting test disconnectWithReceipt()
+14:23:45.925 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - CONNECT session=sess1
+14:23:45.928 [tcp-client-loop-nio-3] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:44235
+14:23:45.949 [tcp-client-scheduler-64] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection ReactorNettyTcpConnection[inbound=ChannelOperations{PooledConnection{channel=[id: 0xbd270607, L:/127.0.0.1:48186 - R:/127.0.0.1:44235]}}] opened in session=sess1
+14:23:45.960 [tcp-client-scheduler-64] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={accept-version=[1.1,1.2], heart-beat=[0,0], login=[guest], passcode=[PROTECTED]}
+14:23:45.982 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[0,0], session=[ID:ubuntu-dst-42307-1679984569801-3:24], version=[1.2]} session=null
+14:23:45.983 [tcp-client-scheduler-61] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Received CONNECTED heart-beat=[0, 0] session=sess1
+14:23:45.984 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Forwarding DISCONNECT receipt=r123 session=sess1
+14:23:45.984 [Test worker] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP DISCONNECT, headers={receipt=[r123]}
+14:23:45.991 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded RECEIPT {receipt-id=[r123]} session=null
+14:23:45.991 [tcp-client-scheduler-61] TRACE o.s.m.s.s.StompBrokerRelayMessageHandler - Received RECEIPT {receipt-id=[r123]} session=sess1
+14:23:45.992 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - STOMP broker relay stats: 2 sessions, ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@5ac3c6cd] (available), processed CONNECT(2)-CONNECTED(2)-DISCONNECT(1)
+14:23:45.992 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopping...
+14:23:45.992 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@5ac3c6cd]]]
+14:23:45.992 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Processing ApplicationEvent BrokerAvailabilityEvent[available=false, StompBrokerRelay[ReactorNettyTcpClient[reactor.netty.tcp.TcpClientConnect@5ac3c6cd]]]
+14:23:45.993 [tcp-client-scheduler-63] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session _system_
+14:23:45.993 [tcp-client-scheduler-63] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:45.995 [tcp-client-scheduler-61] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection to broker closed in session sess1
+14:23:45.995 [tcp-client-scheduler-61] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session sess1
+14:23:46.331 [tcp-client-loop-nio-2] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:46.332 [tcp-client-loop-nio-2] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:48.079 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - Stopped.
+14:23:48.079 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Stopping ActiveMQ broker and will await shutdown
+14:23:48.085 [Test worker] DEBUG o.s.m.s.s.AbstractStompBrokerRelayIntegrationTests - Broker stopped
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 28, 2023, 2:24:32 PM</p>
+</div>
+</div>
+</body>
+</html>

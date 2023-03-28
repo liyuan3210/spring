@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - RSocketClientToServerCoroutinesIntegrationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>RSocketClientToServerCoroutinesIntegrationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.rsocket.html">org.springframework.messaging.rsocket</a> &gt; RSocketClientToServerCoroutinesIntegrationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.068s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">echoAsync()</td>
+<td class="success">0.186s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">echoChannel()</td>
+<td class="success">0.392s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">echoStream()</td>
+<td class="success">0.118s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">echoStreamAsync()</td>
+<td class="success">0.292s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">fireAndForget()</td>
+<td class="success">0.087s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">fireAndForgetAsync()</td>
+<td class="success">0.154s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">handleWithThrownException()</td>
+<td class="success">0.097s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">unitReturnValue()</td>
+<td class="success">0.087s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">unitReturnValueFromExceptionHandler()</td>
+<td class="success">0.655s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:23:59.810 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.ServerController:
+	{[],[echo-channel]}: echoChannel(Flow)
+	{[],[thrown-exception]}: handleAndThrow(String,Continuation)
+	{[],[receive]}: receive(String)
+	{[],[echo-async]}: echoAsync(String,Continuation)
+	{[],[echo-stream]}: echoStream(String)
+	{[],[echo-stream-async]}: echoStreamAsync(String,Continuation)
+	{[],[unit-return-value]}: unitReturnValue(String,Continuation)
+	{[],[receive-async]}: receiveAsync(String,Continuation)
+14:24:00.235 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {} with registrations for [].
+14:24:00.243 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=unit-return-value} with registrations for [].
+14:24:00.244 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#unitReturnValue[2 args]
+14:24:00.417 [tcp-client-loop-nio-1] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:24:00.429 [tcp-client-loop-nio-1] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:24:00.788 [reactor-tcp-epoll-2 @coroutine#1] DEBUG o.s.m.h.i.r.InvocableHelper - Searching for methods to handle IllegalStateException
+14:24:00.790 [reactor-tcp-epoll-2 @coroutine#1] DEBUG o.s.m.h.i.r.InvocableHelper - Found exception handler ServerController#handleExceptionWithVoidReturnValue[2 args]
+14:24:00.790 [reactor-tcp-epoll-2 @coroutine#1] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#handleExceptionWithVoidReturnValue[2 args]
+14:24:00.893 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-stream-async} with registrations for [].
+14:24:00.893 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoStreamAsync[2 args]
+14:24:01.207 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=thrown-exception} with registrations for [].
+14:24:01.208 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#handleAndThrow[2 args]
+14:24:01.225 [kotlinx.coroutines.DefaultExecutor @coroutine#4] DEBUG o.s.m.h.i.r.InvocableHelper - Searching for methods to handle IllegalArgumentException
+14:24:01.227 [kotlinx.coroutines.DefaultExecutor @coroutine#4] DEBUG o.s.m.h.i.r.InvocableHelper - Found exception handler ServerController#handleException[2 args]
+14:24:01.232 [kotlinx.coroutines.DefaultExecutor @coroutine#4] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#handleException[2 args]
+14:24:01.325 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-async} with registrations for [].
+14:24:01.327 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoAsync[2 args]
+14:24:01.351 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-async} with registrations for [].
+14:24:01.354 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoAsync[2 args]
+14:24:01.386 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-async} with registrations for [].
+14:24:01.387 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoAsync[2 args]
+14:24:01.485 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-channel} with registrations for [].
+14:24:01.485 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoChannel[1 args]
+14:24:01.523 [tcp-client-loop-nio-1] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:24:01.523 [tcp-client-loop-nio-1] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:24:01.909 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=receive-async} with registrations for [].
+14:24:01.910 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#receiveAsync[2 args]
+14:24:01.939 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=receive-async} with registrations for [].
+14:24:01.939 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#receiveAsync[2 args]
+14:24:01.942 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=receive-async} with registrations for [].
+14:24:01.945 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#receiveAsync[2 args]
+14:24:02.034 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=receive} with registrations for [].
+14:24:02.035 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#receive[1 args]
+14:24:02.043 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=receive} with registrations for [].
+14:24:02.043 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#receive[1 args]
+14:24:02.054 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=receive} with registrations for [].
+14:24:02.056 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#receive[1 args]
+14:24:02.122 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-stream} with registrations for [].
+14:24:02.122 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoStream[1 args]
+14:24:02.287 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=unit-return-value} with registrations for [].
+14:24:02.290 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#unitReturnValue[2 args]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 28, 2023, 2:24:31 PM</p>
+</div>
+</div>
+</body>
+</html>

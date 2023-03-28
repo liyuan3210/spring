@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - RSocketClientToServerIntegrationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>RSocketClientToServerIntegrationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.rsocket.html">org.springframework.messaging.rsocket</a> &gt; RSocketClientToServerIntegrationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.378s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">echo()</td>
+<td class="success">0.098s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">echoAsync()</td>
+<td class="success">0.131s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">echoChannel()</td>
+<td class="success">0.315s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">echoChannelWithEmptyInput()</td>
+<td class="success">0.047s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">echoStream()</td>
+<td class="success">0.109s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">fireAndForget()</td>
+<td class="success">0.152s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">handleWithErrorSignal()</td>
+<td class="success">0.107s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">handleWithThrownException()</td>
+<td class="success">0.044s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">metadataPush()</td>
+<td class="success">0.131s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">noMatchingRoute()</td>
+<td class="success">0.057s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">voidReturnValue()</td>
+<td class="success">0.069s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">voidReturnValueFromExceptionHandler()</td>
+<td class="success">0.118s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:22:18.388 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.ServerController:
+	{[],[echo-channel]}: echoChannel(Flux)
+	{[],[thrown-exception]}: handleAndThrow(String)
+	{[],[receive]}: receive(String)
+	{[],[void-return-value]}: voidReturnValue(String)
+	{[],[echo]}: echo(String)
+	{[],[echo-async]}: echoAsync(String)
+	{[],[echo-stream]}: echoStream(String)
+	{[],[echo-channel-empty]}: echoChannelEmpty(Flux)
+	{[],[error-signal]}: handleAndReturnError(String)
+	{[SETUP || METADATA_PUSH],[foo-updates]}: handleMetadata(String)
+14:22:18.520 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {} with registrations for [messaging/x.foo].
+14:22:18.526 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=error-signal} with registrations for [messaging/x.foo].
+14:22:18.527 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#handleAndReturnError[1 args]
+14:22:18.530 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Searching for methods to handle IllegalArgumentException
+14:22:18.536 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Found exception handler ServerController#handleException[1 args]
+14:22:18.536 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#handleException[1 args]
+14:22:18.562 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=void-return-value} with registrations for [messaging/x.foo].
+14:22:18.563 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#voidReturnValue[1 args]
+14:22:18.578 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Searching for methods to handle IllegalStateException
+14:22:18.579 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Found exception handler ServerController#handleExceptionWithVoidReturnValue[1 args]
+14:22:18.608 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#handleExceptionWithVoidReturnValue[1 args]
+14:22:18.683 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=thrown-exception} with registrations for [messaging/x.foo].
+14:22:18.684 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#handleAndThrow[1 args]
+14:22:18.685 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Searching for methods to handle IllegalArgumentException
+14:22:18.688 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Found exception handler ServerController#handleException[1 args]
+14:22:18.689 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#handleException[1 args]
+14:22:18.747 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-async} with registrations for [messaging/x.foo].
+14:22:18.747 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoAsync[1 args]
+14:22:18.782 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-async} with registrations for [messaging/x.foo].
+14:22:18.783 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoAsync[1 args]
+14:22:18.825 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-async} with registrations for [messaging/x.foo].
+14:22:18.826 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoAsync[1 args]
+14:22:18.860 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo} with registrations for [messaging/x.foo].
+14:22:18.860 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echo[1 args]
+14:22:18.894 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo} with registrations for [messaging/x.foo].
+14:22:18.894 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echo[1 args]
+14:22:18.926 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo} with registrations for [messaging/x.foo].
+14:22:18.928 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echo[1 args]
+14:22:18.960 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-channel} with registrations for [messaging/x.foo].
+14:22:18.976 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoChannel[1 args]
+14:22:19.275 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-channel-empty} with registrations for [messaging/x.foo].
+14:22:19.276 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoChannelEmpty[1 args]
+14:22:19.386 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=void-return-value} with registrations for [messaging/x.foo].
+14:22:19.387 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#voidReturnValue[1 args]
+14:22:19.457 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=foo-updates, foo=bar} with registrations for [messaging/x.foo].
+14:22:19.462 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#handleMetadata[1 args]
+14:22:19.494 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=foo-updates, foo=baz} with registrations for [messaging/x.foo].
+14:22:19.495 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#handleMetadata[1 args]
+14:22:19.604 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=receive} with registrations for [messaging/x.foo].
+14:22:19.612 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#receive[1 args]
+14:22:19.628 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=receive} with registrations for [messaging/x.foo].
+14:22:19.631 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#receive[1 args]
+14:22:19.651 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=receive} with registrations for [messaging/x.foo].
+14:22:19.652 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#receive[1 args]
+14:22:19.728 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=invalid} with registrations for [messaging/x.foo].
+14:22:19.793 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-stream} with registrations for [messaging/x.foo].
+14:22:19.793 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoStream[1 args]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 28, 2023, 2:24:31 PM</p>
+</div>
+</div>
+</body>
+</html>

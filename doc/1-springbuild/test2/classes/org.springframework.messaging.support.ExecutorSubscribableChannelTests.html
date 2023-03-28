@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ExecutorSubscribableChannelTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ExecutorSubscribableChannelTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.support.html">org.springframework.messaging.support</a> &gt; ExecutorSubscribableChannelTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">10</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.975s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">concurrentModification()</td>
+<td class="success">0.051s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">failurePropagates()</td>
+<td class="success">0.130s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">interceptorWithException()</td>
+<td class="success">0.048s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">interceptorWithModifiedMessage()</td>
+<td class="success">0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">interceptorWithNull()</td>
+<td class="success">0.031s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">messageMustNotBeNull()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sendWithExecutor()</td>
+<td class="success">0.583s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sendWithoutExecutor()</td>
+<td class="success">0.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">subscribeTwice()</td>
+<td class="success">0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">unsubscribeTwice()</td>
+<td class="success">0.068s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:23:53.368 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@353b5d86 added handler
+14:23:53.405 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@286f8e90 added handler
+14:23:53.457 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@286f8e90 removed handler
+14:23:54.063 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@6a9e88f1 added handler
+14:23:54.168 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@22edca96 added handler
+14:23:54.194 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@22edca96 added Mock for MessageHandler, hashCode: 1456035721
+14:23:54.235 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@13f6395d added handler
+14:23:54.292 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@520b547c added org.springframework.messaging.support.ExecutorSubscribableChannelTests$$Lambda$1818/0x00000008015cbb20@5519ee60
+14:23:54.292 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@520b547c added handler
+14:23:54.292 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@520b547c removed handler
+14:23:54.310 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@66008321 added handler
+14:23:54.326 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@4eb34397 added handler
+14:23:54.352 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - ExecutorSubscribableChannel@2fbc704a added handler
+14:23:54.352 [Test worker] DEBUG o.s.m.s.ExecutorSubscribableChannel - NullReturningBeforeHandleInterceptor returned null from beforeHandle, i.e. precluding the send.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 28, 2023, 2:24:32 PM</p>
+</div>
+</div>
+</body>
+</html>

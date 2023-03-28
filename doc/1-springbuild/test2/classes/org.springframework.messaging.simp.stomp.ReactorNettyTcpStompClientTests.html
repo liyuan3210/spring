@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ReactorNettyTcpStompClientTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ReactorNettyTcpStompClientTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.simp.stomp.html">org.springframework.messaging.simp.stomp</a> &gt; ReactorNettyTcpStompClientTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.771s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">publishSubscribeOnReactorNetty()</td>
+<td class="success">0.929s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">publishSubscribeOnReactorNetty2()</td>
+<td class="success">0.842s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:23:48.091 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Setting up before 'publishSubscribeOnReactorNetty'
+14:23:48.250 [tcp-client-loop-nio-2] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:41885
+14:23:48.255 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Awaiting for subscription receipts
+14:23:48.256 [tcp-client-loop-nio-3] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:41885
+14:23:48.258 [tcp-client-loop-nio-3] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:48.258 [tcp-client-loop-nio-3] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:48.267 [tcp-client-scheduler-65] DEBUG o.s.m.s.s.DefaultStompSession - Connection established in session id=f4b59131-faac-6117-5228-abb13298d8ba
+14:23:48.280 [tcp-client-scheduler-65] TRACE o.s.m.s.s.DefaultStompSession - Sending CONNECT {heart-beat=[10000,10000], accept-version=[1.1,1.2]} session=f4b59131-faac-6117-5228-abb13298d8ba
+14:23:48.280 [tcp-client-scheduler-65] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={heart-beat=[10000,10000], accept-version=[1.1,1.2]}
+14:23:48.301 [tcp-client-scheduler-66] DEBUG o.s.m.s.s.DefaultStompSession - Connection established in session id=74860892-a615-d26b-a03c-f41e9f78af26
+14:23:48.325 [tcp-client-scheduler-66] TRACE o.s.m.s.s.DefaultStompSession - Sending CONNECT {heart-beat=[10000,10000], accept-version=[1.1,1.2]} session=74860892-a615-d26b-a03c-f41e9f78af26
+14:23:48.326 [tcp-client-scheduler-66] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={heart-beat=[10000,10000], accept-version=[1.1,1.2]}
+14:23:48.347 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:25], version=[1.2]} session=null
+14:23:48.347 [tcp-client-scheduler-67] TRACE o.s.m.s.s.DefaultStompSession - Received CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:25], version=[1.2]} session=f4b59131-faac-6117-5228-abb13298d8ba
+14:23:48.351 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:26], version=[1.2]} session=null
+14:23:48.352 [tcp-client-scheduler-68] TRACE o.s.m.s.s.DefaultStompSession - Received CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:26], version=[1.2]} session=74860892-a615-d26b-a03c-f41e9f78af26
+14:23:48.356 [tcp-client-scheduler-67] TRACE o.s.m.s.s.DefaultStompSession - Sending SUBSCRIBE {destination=[/topic/foo], id=[0], receipt=[0]} session=f4b59131-faac-6117-5228-abb13298d8ba
+14:23:48.356 [tcp-client-scheduler-67] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP SUBSCRIBE, headers={destination=[/topic/foo], id=[0], receipt=[0]}
+14:23:48.356 [tcp-client-scheduler-68] TRACE o.s.m.s.s.DefaultStompSession - Sending SUBSCRIBE {destination=[/topic/foo], id=[0], receipt=[0]} session=74860892-a615-d26b-a03c-f41e9f78af26
+14:23:48.356 [tcp-client-scheduler-68] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP SUBSCRIBE, headers={destination=[/topic/foo], id=[0], receipt=[0]}
+14:23:48.362 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded RECEIPT {receipt-id=[0]} session=null
+14:23:48.363 [tcp-client-scheduler-67] TRACE o.s.m.s.s.DefaultStompSession - Received RECEIPT {receipt-id=[0]} session=f4b59131-faac-6117-5228-abb13298d8ba
+14:23:48.364 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Awaiting for subscription receipts
+14:23:48.376 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded RECEIPT {receipt-id=[0]} session=null
+14:23:48.377 [tcp-client-scheduler-68] TRACE o.s.m.s.s.DefaultStompSession - Received RECEIPT {receipt-id=[0]} session=74860892-a615-d26b-a03c-f41e9f78af26
+14:23:48.380 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Awaiting for message count: 2
+14:23:48.384 [tcp-client-loop-nio-4] DEBUG o.s.m.t.r.ReactorNettyTcpClient - Connected to /127.0.0.1:41885
+14:23:48.384 [tcp-client-scheduler-65] DEBUG o.s.m.s.s.DefaultStompSession - Connection established in session id=2cec3588-3276-fa00-0e11-003bb6468e64
+14:23:48.385 [tcp-client-scheduler-65] TRACE o.s.m.s.s.DefaultStompSession - Sending CONNECT {heart-beat=[10000,10000], accept-version=[1.1,1.2]} session=2cec3588-3276-fa00-0e11-003bb6468e64
+14:23:48.385 [tcp-client-scheduler-65] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={heart-beat=[10000,10000], accept-version=[1.1,1.2]}
+14:23:48.400 [tcp-client-loop-nio-4] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:27], version=[1.2]} session=null
+14:23:48.400 [tcp-client-scheduler-66] TRACE o.s.m.s.s.DefaultStompSession - Received CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:27], version=[1.2]} session=2cec3588-3276-fa00-0e11-003bb6468e64
+14:23:48.401 [tcp-client-scheduler-66] TRACE o.s.m.s.s.DefaultStompSession - Sending SEND {destination=[/topic/foo], content-type=[text/plain;charset=UTF-8]} session=2cec3588-3276-fa00-0e11-003bb6468e64 text/plain;charset=UTF-8 payload=foo1
+14:23:48.401 [tcp-client-scheduler-66] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP SEND, headers={destination=[/topic/foo], content-type=[text/plain;charset=UTF-8]}
+14:23:48.403 [tcp-client-scheduler-66] TRACE o.s.m.s.s.DefaultStompSession - Sending SEND {destination=[/topic/foo], content-type=[text/plain;charset=UTF-8]} session=2cec3588-3276-fa00-0e11-003bb6468e64 text/plain;charset=UTF-8 payload=foo2
+14:23:48.403 [tcp-client-scheduler-66] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP SEND, headers={destination=[/topic/foo], content-type=[text/plain;charset=UTF-8]}
+14:23:48.428 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:27:-1:1:1], content-type=[text/plain;charset=UTF-8], timestamp=[1679984628409]} session=null text/plain;charset=UTF-8 payload=foo1
+14:23:48.430 [tcp-client-scheduler-67] TRACE o.s.m.s.s.DefaultStompSession - Received MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:27:-1:1:1], content-type=[text/plain;charset=UTF-8], timestamp=[1679984628409]} session=f4b59131-faac-6117-5228-abb13298d8ba text/plain;charset=UTF-8 payload=foo1
+14:23:48.438 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:27:-1:1:1], content-type=[text/plain;charset=UTF-8], timestamp=[1679984628409]} session=null text/plain;charset=UTF-8 payload=foo1
+14:23:48.440 [tcp-client-scheduler-68] TRACE o.s.m.s.s.DefaultStompSession - Received MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:27:-1:1:1], content-type=[text/plain;charset=UTF-8], timestamp=[1679984628409]} session=74860892-a615-d26b-a03c-f41e9f78af26 text/plain;charset=UTF-8 payload=foo1
+14:23:48.442 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:27:-1:1:2], content-type=[text/plain;charset=UTF-8], timestamp=[1679984628431]} session=null text/plain;charset=UTF-8 payload=foo2
+14:23:48.443 [tcp-client-scheduler-67] TRACE o.s.m.s.s.DefaultStompSession - Received MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:27:-1:1:2], content-type=[text/plain;charset=UTF-8], timestamp=[1679984628431]} session=f4b59131-faac-6117-5228-abb13298d8ba text/plain;charset=UTF-8 payload=foo2
+14:23:48.450 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:27:-1:1:2], content-type=[text/plain;charset=UTF-8], timestamp=[1679984628431]} session=null text/plain;charset=UTF-8 payload=foo2
+14:23:48.450 [tcp-client-scheduler-68] TRACE o.s.m.s.s.DefaultStompSession - Received MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:27:-1:1:2], content-type=[text/plain;charset=UTF-8], timestamp=[1679984628431]} session=74860892-a615-d26b-a03c-f41e9f78af26 text/plain;charset=UTF-8 payload=foo2
+14:23:48.895 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Awaiting for message count: 2
+14:23:48.895 [Test worker] TRACE o.s.m.s.s.DefaultStompSession - Sending DISCONNECT  session=f4b59131-faac-6117-5228-abb13298d8ba
+14:23:48.895 [Test worker] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP DISCONNECT, headers=null
+14:23:48.919 [Test worker] TRACE o.s.m.s.s.DefaultStompSession - Sending DISCONNECT  session=74860892-a615-d26b-a03c-f41e9f78af26
+14:23:48.920 [Test worker] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP DISCONNECT, headers=null
+14:23:48.922 [tcp-client-scheduler-67] DEBUG o.s.m.s.s.DefaultStompSession - Connection closed in session id=f4b59131-faac-6117-5228-abb13298d8ba
+14:23:48.929 [tcp-client-scheduler-68] DEBUG o.s.m.s.s.DefaultStompSession - Connection closed in session id=74860892-a615-d26b-a03c-f41e9f78af26
+14:23:48.946 [Test worker] TRACE o.s.m.s.s.DefaultStompSession - Sending DISCONNECT  session=2cec3588-3276-fa00-0e11-003bb6468e64
+14:23:48.947 [Test worker] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP DISCONNECT, headers=null
+14:23:48.955 [tcp-client-scheduler-66] DEBUG o.s.m.s.s.DefaultStompSession - Connection closed in session id=2cec3588-3276-fa00-0e11-003bb6468e64
+14:23:48.979 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Stopping ActiveMQ broker and will await shutdown
+14:23:49.045 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Setting up before 'publishSubscribeOnReactorNetty2'
+14:23:49.126 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Awaiting for subscription receipts
+14:23:49.127 [tcp-client-loop-nio-2] DEBUG o.s.m.t.r.ReactorNetty2TcpClient - Connected to /127.0.0.1:35397
+14:23:49.139 [tcp-client-loop-nio-3] DEBUG o.s.m.t.r.ReactorNetty2TcpClient - Connected to /127.0.0.1:35397
+14:23:49.172 [tcp-client-scheduler-69] DEBUG o.s.m.s.s.DefaultStompSession - Connection established in session id=967bdc6a-1f26-115b-4bbc-c7dbf85ef9a4
+14:23:49.172 [tcp-client-scheduler-69] TRACE o.s.m.s.s.DefaultStompSession - Sending CONNECT {heart-beat=[10000,10000], accept-version=[1.1,1.2]} session=967bdc6a-1f26-115b-4bbc-c7dbf85ef9a4
+14:23:49.173 [tcp-client-scheduler-69] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={heart-beat=[10000,10000], accept-version=[1.1,1.2]}
+14:23:49.182 [tcp-client-scheduler-70] DEBUG o.s.m.s.s.DefaultStompSession - Connection established in session id=06d6629b-0da5-18c2-af4a-66b509e03ace
+14:23:49.183 [tcp-client-scheduler-70] TRACE o.s.m.s.s.DefaultStompSession - Sending CONNECT {heart-beat=[10000,10000], accept-version=[1.1,1.2]} session=06d6629b-0da5-18c2-af4a-66b509e03ace
+14:23:49.183 [tcp-client-scheduler-70] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={heart-beat=[10000,10000], accept-version=[1.1,1.2]}
+14:23:49.208 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:29], version=[1.2]} session=null
+14:23:49.210 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:28], version=[1.2]} session=null
+14:23:49.216 [tcp-client-scheduler-71] TRACE o.s.m.s.s.DefaultStompSession - Received CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:28], version=[1.2]} session=967bdc6a-1f26-115b-4bbc-c7dbf85ef9a4
+14:23:49.220 [tcp-client-scheduler-72] TRACE o.s.m.s.s.DefaultStompSession - Received CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:29], version=[1.2]} session=06d6629b-0da5-18c2-af4a-66b509e03ace
+14:23:49.221 [tcp-client-scheduler-72] TRACE o.s.m.s.s.DefaultStompSession - Sending SUBSCRIBE {destination=[/topic/foo], id=[0], receipt=[0]} session=06d6629b-0da5-18c2-af4a-66b509e03ace
+14:23:49.221 [tcp-client-scheduler-72] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP SUBSCRIBE, headers={destination=[/topic/foo], id=[0], receipt=[0]}
+14:23:49.243 [tcp-client-scheduler-71] TRACE o.s.m.s.s.DefaultStompSession - Sending SUBSCRIBE {destination=[/topic/foo], id=[0], receipt=[0]} session=967bdc6a-1f26-115b-4bbc-c7dbf85ef9a4
+14:23:49.244 [tcp-client-scheduler-71] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP SUBSCRIBE, headers={destination=[/topic/foo], id=[0], receipt=[0]}
+14:23:49.299 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded RECEIPT {receipt-id=[0]} session=null
+14:23:49.300 [tcp-client-scheduler-72] TRACE o.s.m.s.s.DefaultStompSession - Received RECEIPT {receipt-id=[0]} session=06d6629b-0da5-18c2-af4a-66b509e03ace
+14:23:49.303 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded RECEIPT {receipt-id=[0]} session=null
+14:23:49.304 [tcp-client-scheduler-71] TRACE o.s.m.s.s.DefaultStompSession - Received RECEIPT {receipt-id=[0]} session=967bdc6a-1f26-115b-4bbc-c7dbf85ef9a4
+14:23:49.305 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Awaiting for subscription receipts
+14:23:49.334 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Awaiting for message count: 2
+14:23:49.342 [tcp-client-loop-nio-4] DEBUG o.s.m.t.r.ReactorNetty2TcpClient - Connected to /127.0.0.1:35397
+14:23:49.344 [tcp-client-scheduler-69] DEBUG o.s.m.s.s.DefaultStompSession - Connection established in session id=55f1cd56-9173-fd5b-7c88-0c05a5e198bc
+14:23:49.345 [tcp-client-scheduler-69] TRACE o.s.m.s.s.DefaultStompSession - Sending CONNECT {heart-beat=[10000,10000], accept-version=[1.1,1.2]} session=55f1cd56-9173-fd5b-7c88-0c05a5e198bc
+14:23:49.345 [tcp-client-scheduler-69] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP CONNECT, headers={heart-beat=[10000,10000], accept-version=[1.1,1.2]}
+14:23:49.351 [tcp-client-loop-nio-4] TRACE o.s.m.s.s.StompDecoder - Decoded CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:30], version=[1.2]} session=null
+14:23:49.352 [tcp-client-scheduler-70] TRACE o.s.m.s.s.DefaultStompSession - Received CONNECTED {server=[ActiveMQ/5.16.2], heart-beat=[10000,10000], session=[ID:ubuntu-dst-42307-1679984569801-3:30], version=[1.2]} session=55f1cd56-9173-fd5b-7c88-0c05a5e198bc
+14:23:49.353 [tcp-client-scheduler-70] TRACE o.s.m.s.s.DefaultStompSession - Sending SEND {destination=[/topic/foo], content-type=[text/plain;charset=UTF-8]} session=55f1cd56-9173-fd5b-7c88-0c05a5e198bc text/plain;charset=UTF-8 payload=foo1
+14:23:49.354 [tcp-client-scheduler-70] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP SEND, headers={destination=[/topic/foo], content-type=[text/plain;charset=UTF-8]}
+14:23:49.357 [tcp-client-scheduler-70] TRACE o.s.m.s.s.DefaultStompSession - Sending SEND {destination=[/topic/foo], content-type=[text/plain;charset=UTF-8]} session=55f1cd56-9173-fd5b-7c88-0c05a5e198bc text/plain;charset=UTF-8 payload=foo2
+14:23:49.357 [tcp-client-scheduler-70] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP SEND, headers={destination=[/topic/foo], content-type=[text/plain;charset=UTF-8]}
+14:23:49.382 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:30:-1:1:1], content-type=[text/plain;charset=UTF-8], timestamp=[1679984629374]} session=null text/plain;charset=UTF-8 payload=foo1
+14:23:49.384 [tcp-client-scheduler-72] TRACE o.s.m.s.s.DefaultStompSession - Received MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:30:-1:1:1], content-type=[text/plain;charset=UTF-8], timestamp=[1679984629374]} session=06d6629b-0da5-18c2-af4a-66b509e03ace text/plain;charset=UTF-8 payload=foo1
+14:23:49.395 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:30:-1:1:1], content-type=[text/plain;charset=UTF-8], timestamp=[1679984629374]} session=null text/plain;charset=UTF-8 payload=foo1
+14:23:49.397 [tcp-client-scheduler-71] TRACE o.s.m.s.s.DefaultStompSession - Received MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:30:-1:1:1], content-type=[text/plain;charset=UTF-8], timestamp=[1679984629374]} session=967bdc6a-1f26-115b-4bbc-c7dbf85ef9a4 text/plain;charset=UTF-8 payload=foo1
+14:23:49.422 [tcp-client-loop-nio-3] TRACE o.s.m.s.s.StompDecoder - Decoded MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:30:-1:1:2], content-type=[text/plain;charset=UTF-8], timestamp=[1679984629410]} session=null text/plain;charset=UTF-8 payload=foo2
+14:23:49.423 [tcp-client-scheduler-72] TRACE o.s.m.s.s.DefaultStompSession - Received MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:30:-1:1:2], content-type=[text/plain;charset=UTF-8], timestamp=[1679984629410]} session=06d6629b-0da5-18c2-af4a-66b509e03ace text/plain;charset=UTF-8 payload=foo2
+14:23:49.436 [tcp-client-loop-nio-2] TRACE o.s.m.s.s.StompDecoder - Decoded MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:30:-1:1:2], content-type=[text/plain;charset=UTF-8], timestamp=[1679984629410]} session=null text/plain;charset=UTF-8 payload=foo2
+14:23:49.444 [tcp-client-scheduler-71] TRACE o.s.m.s.s.DefaultStompSession - Received MESSAGE {content-length=[4], expires=[0], destination=[/topic/foo], subscription=[0], priority=[4], message-id=[ID:ubuntu-dst-42307-1679984569801-3:30:-1:1:2], content-type=[text/plain;charset=UTF-8], timestamp=[1679984629410]} session=967bdc6a-1f26-115b-4bbc-c7dbf85ef9a4 text/plain;charset=UTF-8 payload=foo2
+14:23:49.836 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Awaiting for message count: 2
+14:23:49.836 [Test worker] TRACE o.s.m.s.s.DefaultStompSession - Sending DISCONNECT  session=967bdc6a-1f26-115b-4bbc-c7dbf85ef9a4
+14:23:49.836 [Test worker] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP DISCONNECT, headers=null
+14:23:49.854 [Test worker] TRACE o.s.m.s.s.DefaultStompSession - Sending DISCONNECT  session=06d6629b-0da5-18c2-af4a-66b509e03ace
+14:23:49.855 [Test worker] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP DISCONNECT, headers=null
+14:23:49.855 [tcp-client-scheduler-71] DEBUG o.s.m.s.s.DefaultStompSession - Connection closed in session id=967bdc6a-1f26-115b-4bbc-c7dbf85ef9a4
+14:23:49.861 [tcp-client-scheduler-72] DEBUG o.s.m.s.s.DefaultStompSession - Connection closed in session id=06d6629b-0da5-18c2-af4a-66b509e03ace
+14:23:49.864 [Test worker] TRACE o.s.m.s.s.DefaultStompSession - Sending DISCONNECT  session=55f1cd56-9173-fd5b-7c88-0c05a5e198bc
+14:23:49.865 [Test worker] TRACE o.s.m.s.s.StompEncoder - Encoding STOMP DISCONNECT, headers=null
+14:23:49.867 [tcp-client-scheduler-70] DEBUG o.s.m.s.s.DefaultStompSession - Connection closed in session id=55f1cd56-9173-fd5b-7c88-0c05a5e198bc
+14:23:49.882 [Test worker] DEBUG o.s.m.s.s.ReactorNettyTcpStompClientTests - Stopping ActiveMQ broker and will await shutdown
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 28, 2023, 2:24:32 PM</p>
+</div>
+</div>
+</body>
+</html>

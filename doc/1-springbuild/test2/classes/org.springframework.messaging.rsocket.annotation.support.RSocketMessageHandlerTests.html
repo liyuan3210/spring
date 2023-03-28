@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - RSocketMessageHandlerTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>RSocketMessageHandlerTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.rsocket.annotation.support.html">org.springframework.messaging.rsocket.annotation.support</a> &gt; RSocketMessageHandlerTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.299s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getRSocketStrategies()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getRSocketStrategiesReflectsCurrentState()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">handleNoMatch()</td>
+<td class="success">0.091s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">ignoreFireAndForgetToHandlerThatCanReply()</td>
+<td class="success">0.051s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">mappings()</td>
+<td class="success">0.065s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">metadataExtractorWithExplicitlySetDecoders()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">rejectConnectMappingMethodsThatCanReply()</td>
+<td class="success">0.066s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">rejectRequestResponseToStreamingHandler()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">setRSocketStrategies()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:22:21.324 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+14:22:21.327 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+14:22:21.356 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+14:22:21.357 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No handler for fireAndForget to 'path'
+14:22:21.368 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+14:22:21.395 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.a.s.InvalidConnectMappingController:
+	{[SETUP || METADATA_PUSH],[]}: connectString()
+14:22:21.407 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - [RSocketMessageHandler@291522f1] Skip auto-detection of message handling methods
+14:22:21.427 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.a.s.AnotherInvalidConnectMappingController:
+	{[SETUP || METADATA_PUSH],[]}: connectString()
+14:22:21.439 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - [RSocketMessageHandler@222a7429] Skip auto-detection of message handling methods
+14:22:21.484 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.a.s.SimpleController:
+	{[SETUP || METADATA_PUSH],[path]}: handle()
+14:22:21.489 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - [RSocketMessageHandler@5f596a1a] Skip auto-detection of message handling methods
+14:22:21.492 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.a.s.TypeLevelMappingController:
+	{[SETUP || METADATA_PUSH],[base.path]}: handleWithPatterns()
+14:22:21.494 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - [RSocketMessageHandler@13edc1bc] Skip auto-detection of message handling methods
+14:22:21.506 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.a.s.HandleAllController:
+	{[SETUP || METADATA_PUSH],[]}: handleAll()
+14:22:21.507 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - [RSocketMessageHandler@63fde7ca] Skip auto-detection of message handling methods
+14:22:21.517 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+14:22:21.556 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.a.s.InteractionMismatchController:
+	{[],[mono-string]}: messageMonoString()
+	{[],[flux-string]}: messageFluxString()
+14:22:21.556 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - [RSocketMessageHandler@4779df3d] Skip auto-detection of message handling methods
+14:22:21.566 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No handler for fireAndForget to 'mono-string'
+14:22:21.576 [Test worker] WARN  o.s.m.r.a.s.RSocketMessageHandler - No ApplicationContext for auto-detection of beans with message handling methods.
+14:22:21.586 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.a.s.InteractionMismatchController:
+	{[],[mono-string]}: messageMonoString()
+	{[],[flux-string]}: messageFluxString()
+14:22:21.587 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - [RSocketMessageHandler@32b8992e] Skip auto-detection of message handling methods
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 28, 2023, 2:24:31 PM</p>
+</div>
+</div>
+</body>
+</html>

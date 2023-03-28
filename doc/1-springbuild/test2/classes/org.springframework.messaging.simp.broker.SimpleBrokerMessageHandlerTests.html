@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - SimpleBrokerMessageHandlerTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>SimpleBrokerMessageHandlerTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.simp.broker.html">org.springframework.messaging.simp.broker</a> &gt; SimpleBrokerMessageHandlerTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">10</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.717s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">connect()</td>
+<td class="success">0.031s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">heartbeatValueWithAndWithoutTaskScheduler()</td>
+<td class="success">0.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">readInactivity()</td>
+<td class="success">0.093s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">readWriteIntervalCalculation()</td>
+<td class="success">0.071s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">startAndStopWithHeartbeatValue()</td>
+<td class="success">0.526s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">startWithHeartbeatValueWithoutTaskScheduler()</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">startWithOneZeroHeartbeatValue()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">subscribeDisconnectPublish()</td>
+<td class="success">0.134s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">subscribePublish()</td>
+<td class="success">0.726s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">writeInactivity()</td>
+<td class="success">0.074s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:22:34.853 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+14:22:34.910 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+14:22:34.920 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing CONNECT session=sess1 user=joe payload=
+14:22:34.950 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+14:22:34.963 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+14:22:34.963 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing CONNECT session=sess2 user=joe payload=
+14:22:34.964 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/foo subscriptionId=sub1 session=sess1 payload=
+14:22:34.965 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/foo subscriptionId=sub2 session=sess1 payload=
+14:22:34.965 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/bar subscriptionId=sub3 session=sess1 payload=
+14:22:34.965 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/foo subscriptionId=sub1 session=sess2 payload=
+14:22:34.965 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/foo subscriptionId=sub2 session=sess2 payload=
+14:22:34.965 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/bar subscriptionId=sub3 session=sess2 payload=
+14:22:34.965 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing MESSAGE destination=/foo session=null payload=message1
+14:22:34.975 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Broadcasting to 2 sessions.
+14:22:35.017 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing MESSAGE destination=/bar session=null payload=message2
+14:22:35.017 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Broadcasting to 2 sessions.
+14:22:35.065 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+14:22:35.074 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+14:22:35.075 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing CONNECT session=sess1 user=joe payload=
+14:22:35.093 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+14:22:35.130 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+14:22:35.130 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing CONNECT session=sess1 user=joe payload=
+14:22:35.228 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+14:22:35.746 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+14:22:35.749 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+14:22:35.770 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopping...
+14:22:35.770 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Stopped.
+14:22:35.799 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+14:22:35.800 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+14:22:35.819 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+14:22:35.820 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+14:22:35.820 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing CONNECT session=sess1 user=joe payload=
+14:22:35.863 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+14:22:35.863 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+14:22:35.902 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing CONNECT session=sess1 user=joe payload=
+14:22:35.960 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+14:22:35.965 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+14:22:35.978 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing CONNECT session=sess1 user=joe payload=
+14:22:36.015 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Starting...
+14:22:36.028 [Test worker] INFO  o.s.m.s.b.SimpleBrokerMessageHandler - Started.
+14:22:36.028 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing CONNECT session=sess2 user=joe payload=
+14:22:36.031 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/foo subscriptionId=sub1 session=sess1 payload=
+14:22:36.042 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/foo subscriptionId=sub2 session=sess1 payload=
+14:22:36.042 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/bar subscriptionId=sub3 session=sess1 payload=
+14:22:36.042 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/foo subscriptionId=sub1 session=sess2 payload=
+14:22:36.042 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/foo subscriptionId=sub2 session=sess2 payload=
+14:22:36.042 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing SUBSCRIBE destination=/bar subscriptionId=sub3 session=sess2 payload=
+14:22:36.042 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing DISCONNECT session=sess1 user=joe payload=byte[0]
+14:22:36.045 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing MESSAGE destination=/foo session=null payload=message1
+14:22:36.046 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Broadcasting to 1 sessions.
+14:22:36.053 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Processing MESSAGE destination=/bar session=null payload=message2
+14:22:36.053 [Test worker] DEBUG o.s.m.s.b.SimpleBrokerMessageHandler - Broadcasting to 1 sessions.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 28, 2023, 2:24:31 PM</p>
+</div>
+</div>
+</body>
+</html>

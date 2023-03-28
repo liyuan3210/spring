@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - StompBrokerRelayMessageHandlerTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>StompBrokerRelayMessageHandlerTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.simp.stomp.html">org.springframework.messaging.simp.stomp</a> &gt; StompBrokerRelayMessageHandlerTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.550s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">alreadyConnected()</td>
+<td class="success">0.035s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">connectWhenBrokerNotAvailable()</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">destinationExcluded()</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">destinationExcludedWithHeartbeat()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">loginAndPasscode()</td>
+<td class="success">0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">messageFromBrokerIsEnriched()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sendAfterBrokerUnavailable()</td>
+<td class="success">0.022s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">systemSubscription()</td>
+<td class="success">0.354s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">virtualHost()</td>
+<td class="success">0.075s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:23:49.912 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting...
+14:23:49.913 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting &quot;system&quot; session, StompBrokerRelay[org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpOperations@5c4404dd]
+14:23:49.915 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Forwarding CONNECT session=_system_
+14:23:49.925 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@76a2db3f opened in session=_system_
+14:23:49.942 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Started.
+14:23:49.959 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - CONNECT user=joe session=sess1
+14:23:49.960 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@76a2db3f opened in session=sess1
+14:23:49.987 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting...
+14:23:49.988 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting &quot;system&quot; session, StompBrokerRelay[org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpOperations@34329e03]
+14:23:49.988 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Forwarding CONNECT session=_system_
+14:23:49.988 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@7d6b0636 opened in session=_system_
+14:23:49.989 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Started.
+14:23:49.999 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting...
+14:23:50.006 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting &quot;system&quot; session, StompBrokerRelay[org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpOperations@47b4fcd5]
+14:23:50.007 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Forwarding CONNECT session=_system_
+14:23:50.007 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@67d6b0a6 opened in session=_system_
+14:23:50.007 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Started.
+14:23:50.008 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - CONNECT user=joe session=sess1
+14:23:50.010 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@67d6b0a6 opened in session=sess1
+14:23:50.031 [Test worker] WARN  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Ignoring CONNECT in session sess1. Already connected.
+14:23:50.065 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting...
+14:23:50.066 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting &quot;system&quot; session, StompBrokerRelay[org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpOperations@74aa29c7]
+14:23:50.066 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Forwarding CONNECT session=_system_
+14:23:50.066 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@7c8d382e opened in session=_system_
+14:23:50.071 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Started.
+14:23:50.071 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - CONNECT user=joe session=sess1
+14:23:50.076 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@7c8d382e opened in session=sess1
+14:23:50.395 [tcp-client-loop-nio-3] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:23:50.395 [tcp-client-loop-nio-3] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:23:50.428 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting...
+14:23:50.429 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting &quot;system&quot; session, StompBrokerRelay[org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpOperations@10f7bc42]
+14:23:50.429 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Forwarding CONNECT session=_system_
+14:23:50.429 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@980ac1f opened in session=_system_
+14:23:50.430 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Started.
+14:23:50.430 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Received CONNECTED heart-beat=[0, 0] session=_system_
+14:23:50.430 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - &quot;System&quot; session connected.
+14:23:50.431 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Subscribing to /topic/foo on &quot;system&quot; connection.
+14:23:50.443 [Test worker] TRACE o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Received MESSAGE {destination=[/topic/foo]} session=_system_
+14:23:50.469 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting...
+14:23:50.470 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting &quot;system&quot; session, StompBrokerRelay[org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpOperations@47cce306]
+14:23:50.470 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Forwarding CONNECT session=_system_
+14:23:50.470 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@4ba04fb4 opened in session=_system_
+14:23:50.474 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Started.
+14:23:50.474 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - CONNECT user=joe session=sess1
+14:23:50.474 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@4ba04fb4 opened in session=sess1
+14:23:50.474 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Received CONNECTED heart-beat=[0, 0] session=sess1
+14:23:50.476 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting...
+14:23:50.476 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting &quot;system&quot; session, StompBrokerRelay[org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpOperations@59294f29]
+14:23:50.477 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Forwarding CONNECT session=_system_
+14:23:50.477 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@795d43d9 opened in session=_system_
+14:23:50.477 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Started.
+14:23:50.477 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - CONNECT user=joe session=sess1
+14:23:50.477 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@795d43d9 opened in session=sess1
+14:23:50.477 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Received CONNECTED heart-beat=[0, 0] session=sess1
+14:23:50.482 [Test worker] TRACE o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Forwarding heart-beat
+14:23:50.484 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting...
+14:23:50.484 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting &quot;system&quot; session, StompBrokerRelay[org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpOperations@62a9d176]
+14:23:50.484 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Forwarding CONNECT session=_system_
+14:23:50.484 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@71ea9a0d opened in session=_system_
+14:23:50.485 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Started.
+14:23:50.485 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - CONNECT user=joe session=sess1
+14:23:50.485 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@71ea9a0d opened in session=sess1
+14:23:50.485 [Test worker] TRACE o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Received MESSAGE  session=sess1, user=joe
+14:23:50.526 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting...
+14:23:50.526 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Starting &quot;system&quot; session, StompBrokerRelay[org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpOperations@19fdcaba]
+14:23:50.527 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Forwarding CONNECT session=_system_
+14:23:50.527 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@35738a92 opened in session=_system_
+14:23:50.527 [Test worker] INFO  o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Started.
+14:23:50.527 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - CONNECT user=joe session=sess1
+14:23:50.527 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@35738a92 opened in session=sess1
+14:23:50.527 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Cleaning up connection state for session sess1
+14:23:50.527 [Test worker] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandlerTests$1 - Closing TCP connection org.springframework.messaging.simp.stomp.StompBrokerRelayMessageHandlerTests$StubTcpConnection@35738a92 in session sess1
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 28, 2023, 2:24:32 PM</p>
+</div>
+</div>
+</body>
+</html>

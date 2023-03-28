@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - RSocketServerToClientIntegrationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>RSocketServerToClientIntegrationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.rsocket.html">org.springframework.messaging.rsocket</a> &gt; RSocketServerToClientIntegrationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.010s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">echo()</td>
+<td class="success">0.131s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">echoAsync()</td>
+<td class="success">0.368s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">echoChannel()</td>
+<td class="success">0.296s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">echoStream()</td>
+<td class="success">0.215s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:22:20.171 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.ServerController:
+	{[SETUP || METADATA_PUSH],[echo-channel]}: echoChannel(RSocketRequester)
+	{[SETUP || METADATA_PUSH],[echo]}: echo(RSocketRequester)
+	{[SETUP || METADATA_PUSH],[echo-async]}: echoAsync(RSocketRequester)
+	{[SETUP || METADATA_PUSH],[echo-stream]}: echoStream(RSocketRequester)
+	{[],[fnf]}: handleFireAndForget()
+14:22:20.229 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.ClientHandler:
+	{[],[echo-channel]}: echoChannel(Flux)
+	{[],[receive]}: receive(String)
+	{[],[echo]}: echo(String)
+	{[],[echo-async]}: echoAsync(String)
+	{[],[echo-stream]}: echoStream(String)
+14:22:20.239 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - [RSocketMessageHandler@d863bb] Skip auto-detection of message handling methods
+14:22:20.300 [reactor-tcp-epoll-1] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-async} with registrations for [].
+14:22:20.320 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-async} with registrations for [].
+14:22:20.322 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoAsync[1 args]
+14:22:20.456 [reactor-tcp-epoll-1] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-async} with registrations for [].
+14:22:20.457 [reactor-tcp-epoll-1] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ClientHandler#echoAsync[1 args]
+14:22:20.492 [reactor-tcp-epoll-1] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-async} with registrations for [].
+14:22:20.493 [reactor-tcp-epoll-1] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ClientHandler#echoAsync[1 args]
+14:22:20.538 [reactor-tcp-epoll-1] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-async} with registrations for [].
+14:22:20.539 [reactor-tcp-epoll-1] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ClientHandler#echoAsync[1 args]
+14:22:20.567 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.ClientHandler:
+	{[],[echo-channel]}: echoChannel(Flux)
+	{[],[receive]}: receive(String)
+	{[],[echo]}: echo(String)
+	{[],[echo-async]}: echoAsync(String)
+	{[],[echo-stream]}: echoStream(String)
+14:22:20.568 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - [RSocketMessageHandler@4560eb15] Skip auto-detection of message handling methods
+14:22:20.572 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo} with registrations for [].
+14:22:20.580 [reactor-tcp-epoll-4] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo} with registrations for [].
+14:22:20.581 [reactor-tcp-epoll-4] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echo[1 args]
+14:22:20.608 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo} with registrations for [].
+14:22:20.608 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ClientHandler#echo[1 args]
+14:22:20.617 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo} with registrations for [].
+14:22:20.618 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ClientHandler#echo[1 args]
+14:22:20.649 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo} with registrations for [].
+14:22:20.683 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ClientHandler#echo[1 args]
+14:22:20.699 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.ClientHandler:
+	{[],[echo-channel]}: echoChannel(Flux)
+	{[],[receive]}: receive(String)
+	{[],[echo]}: echo(String)
+	{[],[echo-async]}: echoAsync(String)
+	{[],[echo-stream]}: echoStream(String)
+14:22:20.699 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - [RSocketMessageHandler@225fb75e] Skip auto-detection of message handling methods
+14:22:20.710 [reactor-tcp-epoll-1] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-channel} with registrations for [].
+14:22:20.718 [reactor-tcp-epoll-2] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-channel} with registrations for [].
+14:22:20.719 [reactor-tcp-epoll-2] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoChannel[1 args]
+14:22:20.734 [reactor-tcp-epoll-1] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-channel} with registrations for [].
+14:22:20.735 [reactor-tcp-epoll-1] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ClientHandler#echoChannel[1 args]
+14:22:20.998 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - 
+	o.s.m.r.ClientHandler:
+	{[],[echo-channel]}: echoChannel(Flux)
+	{[],[receive]}: receive(String)
+	{[],[echo]}: echo(String)
+	{[],[echo-async]}: echoAsync(String)
+	{[],[echo-stream]}: echoStream(String)
+14:22:21.014 [Test worker] DEBUG o.s.m.r.a.s.RSocketMessageHandler - [RSocketMessageHandler@61d9dd15] Skip auto-detection of message handling methods
+14:22:21.024 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-stream} with registrations for [].
+14:22:21.026 [reactor-tcp-epoll-4] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-stream} with registrations for [].
+14:22:21.027 [reactor-tcp-epoll-4] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ServerController#echoStream[1 args]
+14:22:21.114 [reactor-tcp-epoll-3] DEBUG o.s.m.r.DefaultMetadataExtractor - Values extracted from metadata: {route=echo-stream} with registrations for [].
+14:22:21.115 [reactor-tcp-epoll-3] DEBUG o.s.m.h.i.r.InvocableHelper - Invoking ClientHandler#echoStream[1 args]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 28, 2023, 2:24:31 PM</p>
+</div>
+</div>
+</body>
+</html>

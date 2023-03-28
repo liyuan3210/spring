@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - SimpAnnotationMethodMessageHandlerTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>SimpAnnotationMethodMessageHandlerTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.simp.annotation.support.html">org.springframework.messaging.simp.annotation.support</a> &gt; SimpAnnotationMethodMessageHandlerTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">20</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.066s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">completableFutureFailure()</td>
+<td class="success">0.039s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">completableFutureSuccess()</td>
+<td class="success">0.162s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">dotPathSeparator()</td>
+<td class="success">0.072s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">errorAsMessageHandlingException()</td>
+<td class="success">0.083s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">exceptionAsCause()</td>
+<td class="success">0.123s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">exceptionWithHandlerMethodArg()</td>
+<td class="success">0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">fluxNotHandled()</td>
+<td class="success">0.072s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">headerArgumentResolution()</td>
+<td class="success">0.080s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listenableFutureFailure()</td>
+<td class="success">0.186s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listenableFutureSuccess()</td>
+<td class="success">0.050s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">messageMappingDestinationVariableResolution()</td>
+<td class="success">0.049s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">monoFailure()</td>
+<td class="success">0.135s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">monoSuccess()</td>
+<td class="success">0.332s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">optionalHeaderArgumentResolutionWhenNotPresent()</td>
+<td class="success">0.134s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">optionalHeaderArgumentResolutionWhenPresent()</td>
+<td class="success">0.082s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">placeholder()</td>
+<td class="success">0.078s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">simpScope()</td>
+<td class="success">0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">simpleBinding()</td>
+<td class="success">0.039s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">subscribeEventDestinationVariableResolution()</td>
+<td class="success">0.099s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validationError()</td>
+<td class="success">0.126s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:22:30.177 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.ListenableFutureController:
+	{[MESSAGE],[/listenable-future/success]}: handleListenableFuture()
+	{[MESSAGE],[/listenable-future/failure]}: handleListenableFutureException()
+14:22:30.182 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/listenable-future/failure, simpSessionId=session1, simpDestination=/app1/listenable-future/failure} payload=byte[0], lookupDestination='/listenable-future/failure'
+14:22:30.191 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking ListenableFutureController#handleListenableFutureException[0 args]
+14:22:30.213 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle IllegalStateException
+14:22:30.234 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking ListenableFutureController#handleValidationException[0 args]
+14:22:30.315 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/${myProperty}]}: placeholder()
+14:22:30.327 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/pre/illegalStateCause, simpSessionId=session1, simpDestination=/pre/illegalStateCause} payload=byte[0], lookupDestination='/pre/illegalStateCause'
+14:22:30.328 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#illegalStateCause[0 args]
+14:22:30.328 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle RuntimeException
+14:22:30.345 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#handleExceptionWithHandlerMethodArg[2 args]
+14:22:30.412 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/${myProperty}]}: placeholder()
+14:22:30.438 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, foo=bar, lookupDestination=/pre/optionalHeaders, simpSessionId=session1, simpDestination=/pre/optionalHeaders} payload=byte[0], lookupDestination='/pre/optionalHeaders'
+14:22:30.439 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#optionalHeaders[2 args]
+14:22:30.478 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/${myProperty}]}: placeholder()
+14:22:30.482 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/pre/message/bar/value, simpSessionId=session1, simpDestination=/pre/message/bar/value} payload=byte[0], lookupDestination='/pre/message/bar/value'
+14:22:30.502 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#messageMappingDestinationVariable[2 args]
+14:22:30.551 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/${myProperty}]}: placeholder()
+14:22:30.575 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/pre/error, simpSessionId=session1, simpDestination=/pre/error} payload=byte[0], lookupDestination='/pre/error'
+14:22:30.588 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#errorAsThrowable[0 args]
+14:22:30.589 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle MessageHandlingException
+14:22:30.589 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#handleErrorWithHandlerMethodArg[2 args]
+14:22:30.691 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/${myProperty}]}: placeholder()
+14:22:30.691 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/pre/illegalState, simpSessionId=session1, simpDestination=/pre/illegalState} payload=byte[0], lookupDestination='/pre/illegalState'
+14:22:30.692 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#illegalState[0 args]
+14:22:30.692 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle IllegalStateException
+14:22:30.692 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#handleExceptionWithHandlerMethodArg[2 args]
+14:22:30.791 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/${myProperty}]}: placeholder()
+14:22:30.830 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/pre/validation/payload, simpSessionId=session1, simpDestination=/pre/validation/payload} payload=byte[0], lookupDestination='/pre/validation/payload'
+14:22:30.831 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#payloadValidation[1 args]
+14:22:30.846 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle MethodArgumentNotValidException
+14:22:30.846 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#handleValidationException[0 args]
+14:22:30.974 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.ReactiveController:
+	{[MESSAGE],[/mono]}: handleMono()
+	{[MESSAGE],[/flux]}: handleFlux()
+14:22:30.987 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/mono, simpSessionId=session1, simpDestination=/app1/mono} payload=byte[0], lookupDestination='/mono'
+14:22:30.988 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking ReactiveController#handleMono[0 args]
+14:22:31.250 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/${myProperty}]}: placeholder()
+14:22:31.251 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=SUBSCRIBE, simpSessionAttributes={}, lookupDestination=/pre/sub/bar/value, simpSessionId=session1, simpDestination=/pre/sub/bar/value} payload=byte[0], lookupDestination='/pre/sub/bar/value'
+14:22:31.278 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#subscribeEventDestinationVariable[2 args]
+14:22:31.342 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.CompletableFutureController:
+	{[MESSAGE],[/completable-future]}: handleCompletableFuture()
+14:22:31.377 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/completable-future, simpSessionId=session1, simpDestination=/app1/completable-future} payload=byte[0], lookupDestination='/completable-future'
+14:22:31.378 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking CompletableFutureController#handleCompletableFuture[0 args]
+14:22:31.518 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/myValue]}: placeholder()
+14:22:31.519 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/pre/myValue, simpSessionId=session1, simpDestination=/pre/myValue} payload=byte[0], lookupDestination='/pre/myValue'
+14:22:31.519 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#placeholder[0 args]
+14:22:31.643 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/${myProperty}]}: placeholder()
+14:22:31.646 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/pre/optionalHeaders, simpSessionId=session1, simpDestination=/pre/optionalHeaders} payload=byte[0], lookupDestination='/pre/optionalHeaders'
+14:22:31.647 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#optionalHeaders[2 args]
+14:22:31.727 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.ReactiveController:
+	{[MESSAGE],[/mono]}: handleMono()
+	{[MESSAGE],[/flux]}: handleFlux()
+14:22:31.775 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/mono, simpSessionId=session1, simpDestination=/app1/mono} payload=byte[0], lookupDestination='/mono'
+14:22:31.787 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking ReactiveController#handleMono[0 args]
+14:22:31.808 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle IllegalStateException
+14:22:31.809 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking ReactiveController#handleValidationException[0 args]
+14:22:31.843 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.ReactiveController:
+	{[MESSAGE],[/mono]}: handleMono()
+	{[MESSAGE],[/flux]}: handleFlux()
+14:22:31.853 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/flux, simpSessionId=session1, simpDestination=/app1/flux} payload=byte[0], lookupDestination='/flux'
+14:22:31.861 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking ReactiveController#handleFlux[0 args]
+14:22:31.875 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle IllegalStateException
+14:22:31.876 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking ReactiveController#handleValidationException[0 args]
+14:22:31.920 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.CompletableFutureController:
+	{[MESSAGE],[/completable-future]}: handleCompletableFuture()
+14:22:31.921 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/completable-future, simpSessionId=session1, simpDestination=/app1/completable-future} payload=byte[0], lookupDestination='/completable-future'
+14:22:31.922 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking CompletableFutureController#handleCompletableFuture[0 args]
+14:22:31.922 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle IllegalStateException
+14:22:31.922 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking CompletableFutureController#handleValidationException[0 args]
+14:22:31.993 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/${myProperty}]}: placeholder()
+14:22:31.994 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, foo=bar, lookupDestination=/pre/headers, simpSessionId=session1, simpDestination=/pre/headers} payload=byte[0], lookupDestination='/pre/headers'
+14:22:32.003 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#headers[2 args]
+14:22:32.057 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.ListenableFutureController:
+	{[MESSAGE],[/listenable-future/success]}: handleListenableFuture()
+	{[MESSAGE],[/listenable-future/failure]}: handleListenableFutureException()
+14:22:32.065 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/listenable-future/success, simpSessionId=session1, simpDestination=/app1/listenable-future/success} payload=byte[0], lookupDestination='/listenable-future/success'
+14:22:32.068 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking ListenableFutureController#handleListenableFuture[0 args]
+14:22:32.123 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.DotPathSeparatorController:
+	{[MESSAGE],[pre.foo]}: handleFoo()
+14:22:32.125 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre./scope]}: scope()
+	{[MESSAGE],[/pre./headers]}: headers(String,Map)
+	{[MESSAGE],[/pre./validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre./optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre./message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre./sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre./binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre./illegalState]}: illegalState()
+	{[MESSAGE],[/pre./illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre./error]}: errorAsThrowable()
+	{[MESSAGE],[/pre./${myProperty}]}: placeholder()
+14:22:32.139 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=pre.foo, simpSessionId=session1, simpDestination=/app1/pre.foo} payload=byte[0], lookupDestination='pre.foo'
+14:22:32.140 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking DotPathSeparatorController#handleFoo[0 args]
+14:22:32.152 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=pre.foo, simpSessionId=session1, simpDestination=/app2/pre.foo} payload=byte[0], lookupDestination='pre.foo'
+14:22:32.156 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking DotPathSeparatorController#handleFoo[0 args]
+14:22:32.196 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/${myProperty}]}: placeholder()
+14:22:32.197 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/pre/binding/id/12, simpSessionId=session1, simpDestination=/pre/binding/id/12} payload=byte[0], lookupDestination='/pre/binding/id/12'
+14:22:32.197 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#simpleBinding[1 args]
+14:22:32.231 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/pre/scope]}: scope()
+	{[MESSAGE],[/pre/headers]}: headers(String,Map)
+	{[MESSAGE],[/pre/validation/payload]}: payloadValidation(String)
+	{[MESSAGE],[/pre/optionalHeaders]}: optionalHeaders(String,Optional)
+	{[MESSAGE],[/pre/message/{foo}/{name}]}: messageMappingDestinationVariable(String,String)
+	{[SUBSCRIBE],[/pre/sub/{foo}/{name}]}: subscribeEventDestinationVariable(String,String)
+	{[MESSAGE],[/pre/binding/id/{id}]}: simpleBinding(Long)
+	{[MESSAGE],[/pre/illegalState]}: illegalState()
+	{[MESSAGE],[/pre/illegalStateCause]}: illegalStateCause()
+	{[MESSAGE],[/pre/error]}: errorAsThrowable()
+	{[MESSAGE],[/pre/${myProperty}]}: placeholder()
+14:22:32.232 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={name=value}, lookupDestination=/pre/scope, simpSessionId=session1, simpDestination=/pre/scope} payload=byte[0], lookupDestination='/pre/scope'
+14:22:32.232 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#scope[0 args]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 28, 2023, 2:24:31 PM</p>
+</div>
+</div>
+</body>
+</html>

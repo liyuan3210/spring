@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - SimpAnnotationMethodMessageHandlerKotlinTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>SimpAnnotationMethodMessageHandlerKotlinTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.springframework.messaging.simp.annotation.support.html">org.springframework.messaging.simp.annotation.support</a> &gt; SimpAnnotationMethodMessageHandlerKotlinTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.663s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">nonNullableHeaderNotRequiredWithHeader()</td>
+<td class="success">0.076s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nonNullableHeaderNotRequiredWithoutHeader()</td>
+<td class="success">0.167s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nonNullableHeaderWithHeader()</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nonNullableHeaderWithoutHeader()</td>
+<td class="success">0.270s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nullableHeaderNotRequiredWithHeader()</td>
+<td class="success">0.038s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nullableHeaderNotRequiredWithoutHeader()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nullableHeaderWithHeader()</td>
+<td class="success">0.040s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nullableHeaderWithoutHeader()</td>
+<td class="success">0.047s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:24:28.847 [tcp-client-loop-nio-3] INFO  o.s.m.s.s.StompBrokerRelayMessageHandler - TCP connection failure in session _system_: Failed to connect: Connection refused: /127.0.0.1:61613
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:61613
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+14:24:28.851 [tcp-client-loop-nio-3] DEBUG o.s.m.s.s.StompBrokerRelayMessageHandler - Cleaning up connection state for session _system_
+14:24:29.874 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/nullableHeader]}: nullableHeader(String)
+	{[MESSAGE],[/nonNullableHeader]}: nonNullableHeader(String)
+	{[MESSAGE],[/nullableHeaderNotRequired]}: nullableHeaderNotRequired(String)
+	{[MESSAGE],[/nonNullableHeaderNotRequired]}: nonNullableHeaderNotRequired(String)
+14:24:29.875 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/nonNullableHeader, simpSessionId=session1, simpDestination=/nonNullableHeader} payload=byte[0], lookupDestination='/nonNullableHeader'
+14:24:29.884 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#nonNullableHeader[1 args]
+14:24:30.041 [Test worker] DEBUG o.s.m.h.HandlerMethod - Could not resolve parameter [0] in public final void org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandlerKotlinTests$TestController.nonNullableHeader(java.lang.String): Missing header 'foo' for method parameter type [class java.lang.String]
+14:24:30.041 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle MessageHandlingException
+14:24:30.042 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#handleIllegalArgumentException[1 args]
+14:24:30.071 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/nullableHeader]}: nullableHeader(String)
+	{[MESSAGE],[/nonNullableHeader]}: nonNullableHeader(String)
+	{[MESSAGE],[/nullableHeaderNotRequired]}: nullableHeaderNotRequired(String)
+	{[MESSAGE],[/nonNullableHeaderNotRequired]}: nonNullableHeaderNotRequired(String)
+14:24:30.094 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, foo=bar, lookupDestination=/nullableHeaderNotRequired, simpSessionId=session1, simpDestination=/nullableHeaderNotRequired} payload=byte[0], lookupDestination='/nullableHeaderNotRequired'
+14:24:30.102 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#nullableHeaderNotRequired[1 args]
+14:24:30.265 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/nullableHeader]}: nullableHeader(String)
+	{[MESSAGE],[/nonNullableHeader]}: nonNullableHeader(String)
+	{[MESSAGE],[/nullableHeaderNotRequired]}: nullableHeaderNotRequired(String)
+	{[MESSAGE],[/nonNullableHeaderNotRequired]}: nonNullableHeaderNotRequired(String)
+14:24:30.278 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/nonNullableHeaderNotRequired, simpSessionId=session1, simpDestination=/nonNullableHeaderNotRequired} payload=byte[0], lookupDestination='/nonNullableHeaderNotRequired'
+14:24:30.279 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#nonNullableHeaderNotRequired[1 args]
+14:24:30.288 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle NullPointerException
+14:24:30.289 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#handleIllegalArgumentException[1 args]
+14:24:30.392 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/nullableHeader]}: nullableHeader(String)
+	{[MESSAGE],[/nonNullableHeader]}: nonNullableHeader(String)
+	{[MESSAGE],[/nullableHeaderNotRequired]}: nullableHeaderNotRequired(String)
+	{[MESSAGE],[/nonNullableHeaderNotRequired]}: nonNullableHeaderNotRequired(String)
+14:24:30.396 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, foo=bar, lookupDestination=/nonNullableHeaderNotRequired, simpSessionId=session1, simpDestination=/nonNullableHeaderNotRequired} payload=byte[0], lookupDestination='/nonNullableHeaderNotRequired'
+14:24:30.403 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#nonNullableHeaderNotRequired[1 args]
+14:24:30.439 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/nullableHeader]}: nullableHeader(String)
+	{[MESSAGE],[/nonNullableHeader]}: nonNullableHeader(String)
+	{[MESSAGE],[/nullableHeaderNotRequired]}: nullableHeaderNotRequired(String)
+	{[MESSAGE],[/nonNullableHeaderNotRequired]}: nonNullableHeaderNotRequired(String)
+14:24:30.440 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, foo=bar, lookupDestination=/nonNullableHeader, simpSessionId=session1, simpDestination=/nonNullableHeader} payload=byte[0], lookupDestination='/nonNullableHeader'
+14:24:30.440 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#nonNullableHeader[1 args]
+14:24:30.490 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/nullableHeader]}: nullableHeader(String)
+	{[MESSAGE],[/nonNullableHeader]}: nonNullableHeader(String)
+	{[MESSAGE],[/nullableHeaderNotRequired]}: nullableHeaderNotRequired(String)
+	{[MESSAGE],[/nonNullableHeaderNotRequired]}: nonNullableHeaderNotRequired(String)
+14:24:30.502 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/nullableHeader, simpSessionId=session1, simpDestination=/nullableHeader} payload=byte[0], lookupDestination='/nullableHeader'
+14:24:30.502 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#nullableHeader[1 args]
+14:24:30.520 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/nullableHeader]}: nullableHeader(String)
+	{[MESSAGE],[/nonNullableHeader]}: nonNullableHeader(String)
+	{[MESSAGE],[/nullableHeaderNotRequired]}: nullableHeaderNotRequired(String)
+	{[MESSAGE],[/nonNullableHeaderNotRequired]}: nonNullableHeaderNotRequired(String)
+14:24:30.520 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, lookupDestination=/nullableHeaderNotRequired, simpSessionId=session1, simpDestination=/nullableHeaderNotRequired} payload=byte[0], lookupDestination='/nullableHeaderNotRequired'
+14:24:30.521 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#nullableHeaderNotRequired[1 args]
+14:24:30.569 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - 
+	o.s.m.s.a.s.TestController:
+	{[MESSAGE],[/nullableHeader]}: nullableHeader(String)
+	{[MESSAGE],[/nonNullableHeader]}: nonNullableHeader(String)
+	{[MESSAGE],[/nullableHeaderNotRequired]}: nullableHeaderNotRequired(String)
+	{[MESSAGE],[/nonNullableHeaderNotRequired]}: nonNullableHeaderNotRequired(String)
+14:24:30.569 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Searching methods to handle headers={simpMessageType=MESSAGE, simpSessionAttributes={}, foo=bar, lookupDestination=/nullableHeader, simpSessionId=session1, simpDestination=/nullableHeader} payload=byte[0], lookupDestination='/nullableHeader'
+14:24:30.569 [Test worker] DEBUG o.s.m.s.a.s.SimpAnnotationMethodMessageHandlerKotlinTests$TestSimpAnnotationMethodMessageHandler - Invoking TestController#nullableHeader[1 args]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Mar 28, 2023, 2:24:31 PM</p>
+</div>
+</div>
+</body>
+</html>
