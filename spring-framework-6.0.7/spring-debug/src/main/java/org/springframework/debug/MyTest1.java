@@ -33,13 +33,16 @@ public class MyTest1 {
 	}
 }
 /**
-build.gradle配置
+ build.gradle配置
  //引用本地模块源码1
  //    implementation project(path: ':spring-context')
  //引用本地模块源码2
  //    optional(project(":spring-context"))
  //引用本地模块源码3
  api(project(":spring-context"))
+ //引用本地模块源码4(下面引用本地模块方式是否过时？？？)
+ //    compile(project(":spring-context"))
+
  //引用远程仓库jar
  //    optional("org.aspectj:aspectjweaver")
  */
