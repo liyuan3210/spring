@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '6.0.7'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //引用本地模块源码1
+//    implementation project(path: ':spring-context')
+    //引用本地模块源码2
+//    optional(project(":spring-context"))
+    //引用本地模块源码3
+    api(project(":spring-context"))
+    //引用远程仓库jar
+//    optional("org.aspectj:aspectjweaver")
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
