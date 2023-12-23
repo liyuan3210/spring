@@ -12,4 +12,6 @@ org.gradle.java.home=...../Contents/Home //指定jdk目录
 
 3.build.gradle
 配置maven仓库
----------------------------------Idea安装Diagrams插件
+---------------------------------Idea安装Diagrams插件???
+https://wenku.csdn.net/answer/08ae6ef0aab94d52a98636a9b3423144
+Plugins->搜索“PlantUML Integration”
