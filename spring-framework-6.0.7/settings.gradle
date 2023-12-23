@@ -58,5 +58,5 @@ settings.gradle.projectsLoaded {
 		}
 	}
 }
-
+//扩展的模块必须放在最后面
 include "spring-debug"
